@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="codigo"></script>
+    <script src="codigo.js"></script>
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="" autocomplete="off">
             <h2>calculadora de IMC</h2>
 
             <div>
                 <label for="nome">Nome</label>
-                <input type="text" class="entrada" id="nome">
+                <input type="text" class="entrada" id="nome" >
             </div>
 
             <div>
                 <label for="peso">Peso</label>
-                <input type="number" class="entrada" id="peso">
+                <input type="number" class="entrada" id="peso" step="0.1" min="0">
             </div>
 
             <div>
                 <label for="altura">Altura</label>
-                <input type="number" class="entrada" id="altura">
+                <input type="number" class="entrada" id="altura" step="0.1" min="0">
             </div>
-            <input type="button" value="calcular" id="botao">
+            <input type="button" value="calcular" id="botao" onclick="calcular_imc()">
         </form>
         <div id="resposta">
 
