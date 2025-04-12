@@ -10,36 +10,36 @@
 <body>
     <main id="conteiner_calculadora">
         
-        <input type="text" id="visor">
+        <input type="text" id="visor" placeholder="0" >
         
         <div id="teclas">
             <div class="linha_tecla">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="/">
+                <input type="button" value="7" onclick="calcular('valor','7')">
+                <input type="button" value="8" onclick="calcular('valor','8')">
+                <input type="button" value="9" onclick="calcular('valor','9')">
+                <input type="button" value="/" onclick="calcular('acao','/')">
             </div>
             <div class="linha_tecla">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="x">
+                <input type="button" value="4" onclick="calcular('valor','4')">
+                <input type="button" value="5" onclick="calcular('valor','5')">
+                <input type="button" value="6" onclick="calcular('valor','6')">
+                <input type="button" value="x" onclick="calcular('acao','*')">
             </div>
             <div class="linha_tecla">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
+                <input type="button" value="1" onclick="calcular('valor','1')">
+                <input type="button" value="2" onclick="calcular('valor','2')">
+                <input type="button" value="3" onclick="calcular('valor','3')">
+                <input type="button" value="+" onclick="calcular('acao','+')">
             </div>
             <div class="linha_tecla">
-                <input type="button" value="0">
-                <input type="button" value=",">
-                <input type="button" value="c-">
-                <input type="button" value="-">
+                <input type="button" value="0" onclick="calcular('valor','0')">
+                <input type="button" value="," onclick="calcular('acao','.')">
+                <input type="button" value="c-" onclick="calcular('acao','c-')">
+                <input type="button" value="-" onclick="calcular('acao','-')">
             </div>
             <div class="linha_tecla">
-                <input type="button" value="c">
-                <input type="button" value="=">
+                <input type="button" value="c" onclick="calcular('acao','c')">
+                <input type="button" value="=" onclick="calcular('acao','=')">
             </div>
         </div>
     </main>
